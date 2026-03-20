@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bgBob" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e1a0e"/>
+      <stop offset="100%" style="stop-color:#091209"/>
+    </linearGradient>
+    <linearGradient id="phoneBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2a1a"/>
+      <stop offset="100%" style="stop-color:#111a11"/>
+    </linearGradient>
+    <linearGradient id="bobOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e87c2a"/>
+      <stop offset="100%" style="stop-color:#f5a623"/>
+    </linearGradient>
+    <radialGradient id="glowBob" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#e87c2a;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#e87c2a;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgBob)"/>
+  <ellipse cx="400" cy="300" rx="200" ry="200" fill="url(#glowBob)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="400" cy="300" r="220" fill="none" stroke="#c8b89a" stroke-width="0.5" stroke-opacity="0.05"/>
+  <circle cx="400" cy="300" r="170" fill="none" stroke="#c8b89a" stroke-width="0.5" stroke-opacity="0.04"/>
+
+  <!-- Phone body -->
+  <rect x="270" y="50" width="260" height="500" rx="30" fill="url(#phoneBody)" stroke="#c8b89a" stroke-width="1" stroke-opacity="0.2"/>
+  <!-- Screen -->
+  <rect x="282" y="68" width="236" height="464" rx="20" fill="#0d150d"/>
+  <!-- Notch -->
+  <rect x="353" y="68" width="94" height="20" rx="0" fill="url(#phoneBody)"/>
+  <rect x="370" y="72" width="60" height="12" rx="6" fill="#091209"/>
+  <!-- Status bar -->
+  <text x="298" y="93" fill="#c8b89a" font-size="8" font-family="sans-serif" opacity="0.5">9:41</text>
+  <rect x="494" y="88" width="18" height="5" rx="2" fill="none" stroke="#c8b89a" stroke-width="0.7" stroke-opacity="0.4"/>
+  <rect x="495" y="89" width="12" height="3" rx="1" fill="#c8b89a" opacity="0.35"/>
+
+  <!-- BOB App Header -->
+  <rect x="282" y="96" width="236" height="56" fill="url(#bobOrange)"/>
+  <text x="400" y="118" fill="#fff" font-size="11" font-family="sans-serif" text-anchor="middle" font-weight="600" letter-spacing="1">Bank of Baroda</text>
+  <text x="400" y="134" fill="#fff" font-size="8" font-family="sans-serif" text-anchor="middle" opacity="0.8">Mobile Banking</text>
+  <!-- Menu icon -->
+  <line x1="298" y1="114" x2="314" y2="114" stroke="#fff" stroke-width="1.5" stroke-opacity="0.8"/>
+  <line x1="298" y1="120" x2="314" y2="120" stroke="#fff" stroke-width="1.5" stroke-opacity="0.8"/>
+  <line x1="298" y1="126" x2="314" y2="126" stroke="#fff" stroke-width="1.5" stroke-opacity="0.8"/>
+  <!-- Bell -->
+  <text x="489" y="123" fill="#fff" font-size="14" font-family="sans-serif" text-anchor="end" opacity="0.8">🔔</text>
+
+  <!-- Account Balance Card -->
+  <rect x="294" y="162" width="212" height="80" rx="10" fill="url(#bobOrange)" opacity="0.9"/>
+  <text x="308" y="182" fill="#fff" font-size="8" font-family="sans-serif" opacity="0.7" letter-spacing="1">SAVINGS ACCOUNT</text>
+  <text x="308" y="202" fill="#fff" font-size="18" font-family="Georgia, serif" font-weight="600">₹ 24,850.00</text>
+  <text x="308" y="218" fill="#fff" font-size="7" font-family="sans-serif" opacity="0.6">A/C •••• •••• 4821</text>
+  <text x="492" y="234" fill="#fff" font-size="9" font-family="sans-serif" text-anchor="end" opacity="0.7">→</text>
+
+  <!-- Quick Actions Row -->
+  <text x="308" y="262" fill="#c8b89a" font-size="8" font-family="sans-serif" opacity="0.5" letter-spacing="1">QUICK ACTIONS</text>
+  <!-- Action buttons -->
+  <rect x="294" y="270" width="46" height="46" rx="8" fill="#1a2a1a" stroke="#e87c2a" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="317" y="289" fill="#e87c2a" font-size="14" text-anchor="middle">↑</text>
+  <text x="317" y="308" fill="#c8b89a" font-size="7" font-family="sans-serif" text-anchor="middle" opacity="0.5">Send</text>
+
+  <rect x="348" y="270" width="46" height="46" rx="8" fill="#1a2a1a" stroke="#e87c2a" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="371" y="289" fill="#e87c2a" font-size="14" text-anchor="middle">↓</text>
+  <text x="371" y="308" fill="#c8b89a" font-size="7" font-family="sans-serif" text-anchor="middle" opacity="0.5">Receive</text>
+
+  <rect x="402" y="270" width="46" height="46" rx="8" fill="#1a2a1a" stroke="#e87c2a" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="425" y="289" fill="#e87c2a" font-size="14" text-anchor="middle">⇄</text>
+  <text x="425" y="308" fill="#c8b89a" font-size="7" font-family="sans-serif" text-anchor="middle" opacity="0.5">Transfer</text>
+
+  <rect x="456" y="270" width="46" height="46" rx="8" fill="#1a2a1a" stroke="#e87c2a" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="479" y="289" fill="#e87c2a" font-size="14" text-anchor="middle">☰</text>
+  <text x="479" y="308" fill="#c8b89a" font-size="7" font-family="sans-serif" text-anchor="middle" opacity="0.5">More</text>
+
+  <!-- Transaction list -->
+  <text x="308" y="336" fill="#c8b89a" font-size="8" font-family="sans-serif" opacity="0.5" letter-spacing="1">RECENT TRANSACTIONS</text>
+  <!-- tx 1 -->
+  <rect x="294" y="344" width="212" height="36" rx="4" fill="#142014"/>
+  <rect x="302" y="354" width="16" height="16" rx="8" fill="#e87c2a" fill-opacity="0.15"/>
+  <text x="310" y="366" fill="#e87c2a" font-size="9" text-anchor="middle">↑</text>
+  <text x="328" y="360" fill="#c8b89a" font-size="9" font-family="sans-serif" opacity="0.8">Grocery Store</text>
+  <text x="328" y="372" fill="#c8b89a" font-size="7" font-family="sans-serif" opacity="0.4">Today, 10:32 AM</text>
+  <text x="499" y="362" fill="#eb5757" font-size="9" font-family="sans-serif" text-anchor="end">- ₹320</text>
+  <!-- tx 2 -->
+  <rect x="294" y="386" width="212" height="36" rx="4" fill="#142014"/>
+  <rect x="302" y="396" width="16" height="16" rx="8" fill="#6fcf97" fill-opacity="0.15"/>
+  <text x="310" y="408" fill="#6fcf97" font-size="9" text-anchor="middle">↓</text>
+  <text x="328" y="402" fill="#c8b89a" font-size="9" font-family="sans-serif" opacity="0.8">Salary Credit</text>
+  <text x="328" y="414" fill="#c8b89a" font-size="7" font-family="sans-serif" opacity="0.4">Yesterday, 9:00 AM</text>
+  <text x="499" y="404" fill="#6fcf97" font-size="9" font-family="sans-serif" text-anchor="end">+ ₹42,000</text>
+  <!-- tx 3 -->
+  <rect x="294" y="428" width="212" height="36" rx="4" fill="#142014"/>
+  <rect x="302" y="438" width="16" height="16" rx="8" fill="#e87c2a" fill-opacity="0.15"/>
+  <text x="310" y="450" fill="#e87c2a" font-size="9" text-anchor="middle">↑</text>
+  <text x="328" y="444" fill="#c8b89a" font-size="9" font-family="sans-serif" opacity="0.8">UPI Payment</text>
+  <text x="328" y="456" fill="#c8b89a" font-size="7" font-family="sans-serif" opacity="0.4">Dec 08, 4:15 PM</text>
+  <text x="499" y="446" fill="#eb5757" font-size="9" font-family="sans-serif" text-anchor="end">- ₹1,500</text>
+
+  <!-- Bottom Nav -->
+  <rect x="282" y="494" width="236" height="38" rx="0" fill="#1a2a1a"/>
+  <rect x="282" y="494" width="236" height="1" fill="#e87c2a" fill-opacity="0.2"/>
+  <text x="330" y="517" fill="#e87c2a" font-size="13" text-anchor="middle">⌂</text>
+  <text x="370" y="517" fill="#c8b89a" font-size="13" text-anchor="middle" opacity="0.3">$</text>
+  <text x="410" y="517" fill="#c8b89a" font-size="13" text-anchor="middle" opacity="0.3">📄</text>
+  <text x="450" y="517" fill="#c8b89a" font-size="13" text-anchor="middle" opacity="0.3">👤</text>
+  <rect x="322" y="527" width="16" height="2" rx="1" fill="#e87c2a" opacity="0.7"/>
+
+  <!-- Side label -->
+  <text x="100" y="320" fill="#e87c2a" font-size="11" font-family="Georgia, serif" opacity="0.4" transform="rotate(-90 100 320)" letter-spacing="3">ANDROID APP</text>
+  <text x="680" y="295" fill="#c8b89a" font-size="9" font-family="sans-serif" opacity="0.25" letter-spacing="2" transform="rotate(90 680 295)">KOTLIN · MATERIAL</text>
+</svg>

@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bgDT" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0814"/>
+      <stop offset="100%" style="stop-color:#0e0410"/>
+    </linearGradient>
+    <linearGradient id="yesBtn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ec4899"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
+    </linearGradient>
+    <radialGradient id="heartGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ec4899;stop-opacity:0.25"/>
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgDT)"/>
+
+  <!-- Confetti dots in background -->
+  <g opacity="0.4">
+    <circle cx="120" cy="80"  r="4" fill="#ec4899"/>
+    <circle cx="680" cy="90"  r="3" fill="#a855f7"/>
+    <circle cx="200" cy="520" r="4" fill="#f5a623"/>
+    <circle cx="600" cy="530" r="3" fill="#ec4899"/>
+    <circle cx="750" cy="200" r="4" fill="#6fcf97"/>
+    <circle cx="50"  cy="400" r="3" fill="#f5a623"/>
+    <rect x="160" y="140" width="6" height="6" rx="1" fill="#ec4899" transform="rotate(20,163,143)"/>
+    <rect x="650" y="160" width="6" height="6" rx="1" fill="#a855f7" transform="rotate(40,653,163)"/>
+    <rect x="100" y="300" width="5" height="5" rx="1" fill="#6fcf97" transform="rotate(-15,102,302)"/>
+    <rect x="700" y="420" width="5" height="5" rx="1" fill="#f5a623" transform="rotate(30,702,422)"/>
+    <circle cx="380" cy="50"  r="3" fill="#d8b4fe"/>
+    <circle cx="420" cy="560" r="3" fill="#ec4899"/>
+  </g>
+
+  <!-- Main card -->
+  <rect x="180" y="80" width="440" height="440" rx="20" fill="#1a0818" stroke="#ec4899" stroke-width="0.8" stroke-opacity="0.3"/>
+
+  <!-- Hearts rain (above card) -->
+  <g font-size="16" opacity="0.6">
+    <text x="220" y="110">💕</text>
+    <text x="360" y="95">❤️</text>
+    <text x="530" y="108">💕</text>
+    <text x="290" y="478">🎉</text>
+    <text x="480" y="488">✨</text>
+    <text x="390" y="492">🎊</text>
+  </g>
+
+  <!-- Card content -->
+  <text x="400" y="145" fill="#f0eeff" font-size="13" font-family="sans-serif" text-anchor="middle" opacity="0.5" letter-spacing="2">YOU HAVE A MESSAGE 💌</text>
+
+  <!-- Big heart -->
+  <ellipse cx="400" cy="240" rx="80" ry="80" fill="url(#heartGlow)"/>
+  <text x="400" y="260" font-size="72" text-anchor="middle">❤️</text>
+
+  <!-- Question text -->
+  <text x="400" y="320" fill="#f0eeff" font-size="17" font-family="Georgia, serif" text-anchor="middle" opacity="0.95">Will you go on a date</text>
+  <text x="400" y="345" fill="#f0eeff" font-size="17" font-family="Georgia, serif" text-anchor="middle" opacity="0.95">with me? 🌹</text>
+
+  <!-- YES button -->
+  <rect x="220" y="378" width="140" height="48" rx="24" fill="url(#yesBtn)"/>
+  <text x="290" y="407" fill="#fff" font-size="14" font-family="sans-serif" text-anchor="middle" font-weight="600">Yes! 💕</text>
+
+  <!-- NO button — running away (positioned oddly) -->
+  <rect x="430" y="395" width="100" height="34" rx="6" fill="#1a0818" stroke="#c8b89a" stroke-width="0.8" stroke-opacity="0.4"/>
+  <text x="480" y="416" fill="#c8b89a" font-size="11" font-family="sans-serif" text-anchor="middle" opacity="0.5">No... 😅</text>
+  <!-- Cursor chasing the No button -->
+  <polygon points="440,390 446,402 443,402 443,414 437,414 437,402 434,402" fill="#a855f7" opacity="0.7"/>
+  <!-- Speed lines from No button -->
+  <line x1="530" y1="412" x2="550" y2="408" stroke="#c8b89a" stroke-width="0.8" stroke-opacity="0.3"/>
+  <line x1="530" y1="416" x2="552" y2="416" stroke="#c8b89a" stroke-width="0.8" stroke-opacity="0.2"/>
+  <line x1="530" y1="420" x2="550" y2="424" stroke="#c8b89a" stroke-width="0.8" stroke-opacity="0.15"/>
+
+  <!-- Tooltip on No button area -->
+  <rect x="530" y="370" width="100" height="22" rx="4" fill="#1e1830" stroke="#a855f7" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="580" y="385" fill="#d8b4fe" font-size="7" font-family="sans-serif" text-anchor="middle" opacity="0.8">I'll keep running 🏃</text>
+  <!-- tooltip arrow -->
+  <polygon points="575,392 580,400 585,392" fill="#1e1830"/>
+
+  <!-- After YES — confetti scene (right side) -->
+  <rect x="640" y="100" width="130" height="400" rx="10" fill="#120410" stroke="#ec4899" stroke-width="0.4" stroke-opacity="0.2"/>
+  <text x="705" y="130" fill="#ec4899" font-size="9" font-family="sans-serif" text-anchor="middle" opacity="0.6" letter-spacing="1">AFTER YES 🎉</text>
+  <!-- Confetti explosion -->
+  <g font-size="14">
+    <text x="650" y="165">🎊</text>
+    <text x="695" y="150">✨</text>
+    <text x="735" y="168">🎉</text>
+    <text x="655" y="195">💕</text>
+    <text x="700" y="185">🌟</text>
+    <text x="730" y="200">🎈</text>
+    <text x="645" y="225">⭐</text>
+    <text x="690" y="220">🥳</text>
+    <text x="730" y="228">💖</text>
+  </g>
+  <!-- Big celebration text -->
+  <text x="705" y="280" fill="#ec4899" font-size="22" font-family="Georgia, serif" text-anchor="middle" opacity="0.9">Yay!</text>
+  <text x="705" y="304" fill="#d8b4fe" font-size="10" font-family="sans-serif" text-anchor="middle" opacity="0.7">See you at</text>
+  <text x="705" y="322" fill="#f5a623" font-size="12" font-family="Georgia, serif" text-anchor="middle" opacity="0.8">7PM 🕖</text>
+  <text x="705" y="345" fill="#c8b89a" font-size="9" font-family="sans-serif" text-anchor="middle" opacity="0.5">Saturday 💌</text>
+
+  <!-- Left side: code snippet -->
+  <rect x="30" y="100" width="130" height="400" rx="10" fill="#120410" stroke="#a855f7" stroke-width="0.4" stroke-opacity="0.2"/>
+  <text x="95" y="125" fill="#a855f7" font-size="8" font-family="sans-serif" text-anchor="middle" opacity="0.5" letter-spacing="1">THE TRICK</text>
+  <text x="42" y="148" fill="#8be9fd" font-size="7" font-family="monospace">btn.addEventListener(</text>
+  <text x="42" y="162" fill="#f5a623" font-size="7" font-family="monospace">'mouseover',</text>
+  <text x="42" y="176" fill="#e8d5b7" font-size="7" font-family="monospace" opacity="0.7">(e) =&gt; {</text>
+  <text x="42" y="192" fill="#6fcf97" font-size="7" font-family="monospace">  // run away!</text>
+  <text x="42" y="206" fill="#e8d5b7" font-size="7" font-family="monospace" opacity="0.7">  let x = random(</text>
+  <text x="42" y="220" fill="#e8d5b7" font-size="7" font-family="monospace" opacity="0.7">    0, vw-btn.w);</text>
+  <text x="42" y="234" fill="#e8d5b7" font-size="7" font-family="monospace" opacity="0.7">  let y = random(</text>
+  <text x="42" y="248" fill="#e8d5b7" font-size="7" font-family="monospace" opacity="0.7">    0, vh-btn.h);</text>
+  <text x="42" y="262" fill="#ec4899" font-size="7" font-family="monospace">  btn.style.left</text>
+  <text x="42" y="276" fill="#ec4899" font-size="7" font-family="monospace">    = x+'px';</text>
+  <text x="42" y="290" fill="#ec4899" font-size="7" font-family="monospace">  btn.style.top</text>
+  <text x="42" y="304" fill="#ec4899" font-size="7" font-family="monospace">    = y+'px';</text>
+  <text x="42" y="318" fill="#e8d5b7" font-size="7" font-family="monospace" opacity="0.7">});</text>
+  <text x="95" y="370" fill="#ec4899" font-size="14" text-anchor="middle">😂</text>
+  <text x="95" y="392" fill="#c8b89a" font-size="7" font-family="sans-serif" text-anchor="middle" opacity="0.4">You can't say no</text>
+
+  <text x="400" y="555" fill="#ec4899" font-size="13" font-family="Georgia, serif" text-anchor="middle" opacity="0.8">The "No" button always runs away 🏃💨</text>
+  <text x="400" y="574" fill="#a855f7" font-size="9" font-family="sans-serif" text-anchor="middle" opacity="0.35" letter-spacing="2">HTML · CSS · JAVASCRIPT · ANIMATIONS</text>
+</svg>

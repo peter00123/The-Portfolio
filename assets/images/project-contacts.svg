@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bgMCE" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0a1a"/>
+      <stop offset="100%" style="stop-color:#08060e"/>
+    </linearGradient>
+    <linearGradient id="excelGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1d6f42"/>
+      <stop offset="100%" style="stop-color:#124d2e"/>
+    </linearGradient>
+    <linearGradient id="gmailRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ea4335"/>
+      <stop offset="100%" style="stop-color:#c0392b"/>
+    </linearGradient>
+    <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c8b89a;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#c8b89a;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#c8b89a;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgMCE)"/>
+
+  <!-- Background grid -->
+  <g opacity="0.04" stroke="#c8b89a" stroke-width="0.5">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="500" x2="800" y2="500"/>
+    <line x1="100" y1="0" x2="100" y2="600"/>
+    <line x1="200" y1="0" x2="200" y2="600"/>
+    <line x1="300" y1="0" x2="300" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="500" y1="0" x2="500" y2="600"/>
+    <line x1="600" y1="0" x2="600" y2="600"/>
+    <line x1="700" y1="0" x2="700" y2="600"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="60" fill="#e8d5b7" font-size="16" font-family="Georgia, serif" text-anchor="middle" opacity="0.85">Mass Contact Entry</text>
+  <text x="400" y="80" fill="#c8b89a" font-size="9" font-family="sans-serif" text-anchor="middle" opacity="0.4" letter-spacing="3">PYTHON · GOOGLE PEOPLE API</text>
+
+  <!-- ===== STEP 1: Excel/CSV ===== -->
+  <rect x="60" y="110" width="180" height="360" rx="8" fill="#0d0a16" stroke="#c8b89a" stroke-width="0.5" stroke-opacity="0.15"/>
+  <!-- Excel header -->
+  <rect x="60" y="110" width="180" height="36" rx="8" fill="url(#excelGreen)"/>
+  <rect x="60" y="132" width="180" height="14" fill="url(#excelGreen)"/>
+  <text x="150" y="133" fill="#fff" font-size="10" font-family="sans-serif" text-anchor="middle" font-weight="600">contacts.xlsx</text>
+
+  <!-- Spreadsheet headers -->
+  <rect x="60" y="146" width="180" height="18" fill="#1d6f42" fill-opacity="0.4"/>
+  <text x="76" y="159" fill="#c8b89a" font-size="7" font-family="monospace" opacity="0.7">NAME</text>
+  <text x="134" y="159" fill="#c8b89a" font-size="7" font-family="monospace" opacity="0.7">PHONE</text>
+  <line x1="120" y1="146" x2="120" y2="470" stroke="#c8b89a" stroke-width="0.3" stroke-opacity="0.15"/>
+
+  <!-- Rows -->
+  <g font-size="8" font-family="monospace">
+    <rect x="60" y="164" width="180" height="20" fill="#1d6f42" fill-opacity="0.06"/>
+    <text x="68" y="178" fill="#c8b89a" opacity="0.65">Ananya S</text>
+    <text x="126" y="178" fill="#c8b89a" opacity="0.65">9876543210</text>
+    <rect x="60" y="184" width="180" height="20"/>
+    <text x="68" y="198" fill="#c8b89a" opacity="0.65">Arjun M</text>
+    <text x="126" y="198" fill="#c8b89a" opacity="0.65">9123456789</text>
+    <rect x="60" y="204" width="180" height="20" fill="#1d6f42" fill-opacity="0.06"/>
+    <text x="68" y="218" fill="#c8b89a" opacity="0.65">Divya K</text>
+    <text x="126" y="218" fill="#c8b89a" opacity="0.65">8800112233</text>
+    <rect x="60" y="224" width="180" height="20"/>
+    <text x="68" y="238" fill="#c8b89a" opacity="0.65">Farhan R</text>
+    <text x="126" y="238" fill="#c8b89a" opacity="0.65">7700990011</text>
+    <rect x="60" y="244" width="180" height="20" fill="#1d6f42" fill-opacity="0.06"/>
+    <text x="68" y="258" fill="#c8b89a" opacity="0.65">Kavya P</text>
+    <text x="126" y="258" fill="#c8b89a" opacity="0.65">9988776655</text>
+    <rect x="60" y="264" width="180" height="20"/>
+    <text x="68" y="278" fill="#c8b89a" opacity="0.65">Mihir J</text>
+    <text x="126" y="278" fill="#c8b89a" opacity="0.65">8877665544</text>
+    <rect x="60" y="284" width="180" height="20" fill="#1d6f42" fill-opacity="0.06"/>
+    <text x="68" y="298" fill="#c8b89a" opacity="0.65">Priya N</text>
+    <text x="126" y="298" fill="#c8b89a" opacity="0.65">9900112233</text>
+    <rect x="60" y="304" width="180" height="20"/>
+    <text x="68" y="318" fill="#c8b89a" opacity="0.65">Rohit T</text>
+    <text x="126" y="318" fill="#c8b89a" opacity="0.65">8811223344</text>
+  </g>
+  <!-- More rows fade -->
+  <rect x="60" y="324" width="180" height="146" fill="url(#bgMCE)" opacity="0.85"/>
+  <text x="150" y="395" fill="#1d6f42" font-size="22" font-family="Georgia, serif" text-anchor="middle" opacity="0.4">···</text>
+  <text x="150" y="456" fill="#c8b89a" font-size="9" font-family="sans-serif" text-anchor="middle" opacity="0.35">1,200 contacts</text>
+
+  <!-- ===== Arrow + Python script (center) ===== -->
+  <!-- Arrow line -->
+  <line x1="240" y1="290" x2="350" y2="290" stroke="url(#arrowGrad)" stroke-width="2"/>
+  <polygon points="346,284 358,290 346,296" fill="#c8b89a" opacity="0.7"/>
+
+  <!-- Python script box -->
+  <rect x="270" y="170" width="260" height="240" rx="8" fill="#100e1a" stroke="#c8b89a" stroke-width="0.5" stroke-opacity="0.2"/>
+  <rect x="270" y="170" width="260" height="32" rx="8" fill="#1e1830"/>
+  <rect x="270" y="190" width="260" height="12" fill="#1e1830"/>
+  <circle cx="290" cy="186" r="5" fill="#c8b89a" fill-opacity="0.15"/>
+  <circle cx="306" cy="186" r="5" fill="#c8b89a" fill-opacity="0.1"/>
+  <text x="400" y="190" fill="#c8b89a" font-size="9" font-family="monospace" text-anchor="middle" opacity="0.4">mass_contact_entry.py</text>
+
+  <text x="285" y="220" fill="#8be9fd" font-size="9" font-family="monospace">import</text>
+  <text x="328" y="220" fill="#e8d5b7" font-size="9" font-family="monospace" opacity="0.75"> gspread, pandas</text>
+  <text x="285" y="234" fill="#8be9fd" font-size="9" font-family="monospace">from</text>
+  <text x="313" y="234" fill="#e8d5b7" font-size="9" font-family="monospace" opacity="0.75"> googleapiclient</text>
+  <text x="285" y="248" fill="#c8b89a" font-size="9" font-family="monospace" opacity="0.4"># Load contacts from CSV/Excel</text>
+  <text x="285" y="262" fill="#6fcf97" font-size="9" font-family="monospace">def</text>
+  <text x="307" y="262" fill="#f5a623" font-size="9" font-family="monospace"> bulk_import</text>
+  <text x="377" y="262" fill="#e8d5b7" font-size="9" font-family="monospace" opacity="0.75">(file):</text>
+  <text x="297" y="276" fill="#e8d5b7" font-size="9" font-family="monospace" opacity="0.6">df = pd.read_excel(file)</text>
+  <text x="297" y="290" fill="#e8d5b7" font-size="9" font-family="monospace" opacity="0.6">service = build_service()</text>
+  <text x="297" y="304" fill="#8be9fd" font-size="9" font-family="monospace">for</text>
+  <text x="316" y="304" fill="#e8d5b7" font-size="9" font-family="monospace" opacity="0.6"> _, row in df.iterrows():</text>
+  <text x="306" y="318" fill="#e8d5b7" font-size="9" font-family="monospace" opacity="0.6">  create_contact(service,</text>
+  <text x="306" y="332" fill="#e8d5b7" font-size="9" font-family="monospace" opacity="0.6">    row.name, row.phone)</text>
+  <text x="285" y="352" fill="#6fcf97" font-size="9" font-family="monospace">print</text>
+  <text x="310" y="352" fill="#e8d5b7" font-size="9" font-family="monospace" opacity="0.55">(f"✓ {len(df)} contacts added")</text>
+
+  <!-- Arrow right -->
+  <line x1="530" y1="290" x2="630" y2="290" stroke="url(#arrowGrad)" stroke-width="2"/>
+  <polygon points="626,284 638,290 626,296" fill="#c8b89a" opacity="0.7"/>
+
+  <!-- ===== Gmail / Google Contacts panel ===== -->
+  <rect x="560" y="110" width="180" height="360" rx="8" fill="#0d0a16" stroke="#c8b89a" stroke-width="0.5" stroke-opacity="0.15"/>
+  <rect x="560" y="110" width="180" height="36" rx="8" fill="url(#gmailRed)"/>
+  <rect x="560" y="132" width="180" height="14" fill="url(#gmailRed)"/>
+  <text x="650" y="133" fill="#fff" font-size="10" font-family="sans-serif" text-anchor="middle" font-weight="600">Google Contacts</text>
+
+  <!-- Contact cards -->
+  <g>
+    <rect x="572" y="158" width="156" height="36" rx="6" fill="#1a1024" stroke="#c8b89a" stroke-width="0.3" stroke-opacity="0.2"/>
+    <circle cx="590" cy="176" r="10" fill="#ea4335" fill-opacity="0.3"/>
+    <text x="590" y="180" fill="#ea4335" font-size="9" text-anchor="middle" font-weight="600">A</text>
+    <text x="606" y="172" fill="#e8d5b7" font-size="9" font-family="sans-serif" opacity="0.8">Ananya S</text>
+    <text x="606" y="184" fill="#c8b89a" font-size="7" font-family="sans-serif" opacity="0.45">9876543210</text>
+    <rect x="700" y="166" width="18" height="8" rx="2" fill="#6fcf97" fill-opacity="0.2"/>
+    <text x="709" y="173" fill="#6fcf97" font-size="6" font-family="sans-serif" text-anchor="middle">✓</text>
+
+    <rect x="572" y="202" width="156" height="36" rx="6" fill="#1a1024" stroke="#c8b89a" stroke-width="0.3" stroke-opacity="0.2"/>
+    <circle cx="590" cy="220" r="10" fill="#34a853" fill-opacity="0.3"/>
+    <text x="590" y="224" fill="#34a853" font-size="9" text-anchor="middle" font-weight="600">A</text>
+    <text x="606" y="216" fill="#e8d5b7" font-size="9" font-family="sans-serif" opacity="0.8">Arjun M</text>
+    <text x="606" y="228" fill="#c8b89a" font-size="7" font-family="sans-serif" opacity="0.45">9123456789</text>
+    <rect x="700" y="210" width="18" height="8" rx="2" fill="#6fcf97" fill-opacity="0.2"/>
+    <text x="709" y="217" fill="#6fcf97" font-size="6" font-family="sans-serif" text-anchor="middle">✓</text>
+
+    <rect x="572" y="246" width="156" height="36" rx="6" fill="#1a1024" stroke="#c8b89a" stroke-width="0.3" stroke-opacity="0.2"/>
+    <circle cx="590" cy="264" r="10" fill="#4285f4" fill-opacity="0.3"/>
+    <text x="590" y="268" fill="#4285f4" font-size="9" text-anchor="middle" font-weight="600">D</text>
+    <text x="606" y="260" fill="#e8d5b7" font-size="9" font-family="sans-serif" opacity="0.8">Divya K</text>
+    <text x="606" y="272" fill="#c8b89a" font-size="7" font-family="sans-serif" opacity="0.45">8800112233</text>
+    <rect x="700" y="254" width="18" height="8" rx="2" fill="#6fcf97" fill-opacity="0.2"/>
+    <text x="709" y="261" fill="#6fcf97" font-size="6" font-family="sans-serif" text-anchor="middle">✓</text>
+
+    <rect x="572" y="290" width="156" height="36" rx="6" fill="#1a1024" stroke="#c8b89a" stroke-width="0.3" stroke-opacity="0.2"/>
+    <circle cx="590" cy="308" r="10" fill="#fbbc04" fill-opacity="0.3"/>
+    <text x="590" y="312" fill="#fbbc04" font-size="9" text-anchor="middle" font-weight="600">F</text>
+    <text x="606" y="304" fill="#e8d5b7" font-size="9" font-family="sans-serif" opacity="0.8">Farhan R</text>
+    <text x="606" y="316" fill="#c8b89a" font-size="7" font-family="sans-serif" opacity="0.45">7700990011</text>
+    <rect x="700" y="298" width="18" height="8" rx="2" fill="#6fcf97" fill-opacity="0.2"/>
+    <text x="709" y="305" fill="#6fcf97" font-size="6" font-family="sans-serif" text-anchor="middle">✓</text>
+
+    <!-- more contacts fade -->
+    <rect x="572" y="334" width="156" height="136" fill="url(#bgMCE)" opacity="0.8"/>
+    <text x="650" y="404" fill="#c8b89a" font-size="22" font-family="Georgia, serif" text-anchor="middle" opacity="0.35">···</text>
+  </g>
+
+  <!-- Success counter at bottom -->
+  <rect x="572" y="440" width="156" height="30" rx="6" fill="#1d6f42" fill-opacity="0.15" stroke="#1d6f42" stroke-width="0.8" stroke-opacity="0.4"/>
+  <text x="650" y="459" fill="#6fcf97" font-size="10" font-family="sans-serif" text-anchor="middle">✓ 1,200 contacts imported</text>
+
+  <!-- Bottom caption -->
+  <text x="400" y="550" fill="#e8d5b7" font-size="12" font-family="Georgia, serif" text-anchor="middle" opacity="0.6">Bulk import in seconds, not hours</text>
+  <text x="400" y="570" fill="#c8b89a" font-size="9" font-family="sans-serif" text-anchor="middle" opacity="0.35" letter-spacing="2">EXCEL / CSV → GOOGLE CONTACTS</text>
+</svg>

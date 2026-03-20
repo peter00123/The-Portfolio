@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="main">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basil V Mathew | Software Developer</title>
+  <meta name="description" content="Basil V Mathew — Android Developer & Software Engineer." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+  <div class="mode-overlay" id="modeOverlay"></div>
+
+  <!-- Floating FAB -->
+  <button class="mode-fab" id="modeFab" aria-label="Switch mode">
+    <span class="mode-fab__track">
+      <span class="mode-fab__icon mode-fab__icon--main">💼</span>
+      <span class="mode-fab__icon mode-fab__icon--fun">🎮</span>
+    </span>
+    <span class="mode-fab__label" id="modeFabLabel">Fun Mode</span>
+  </button>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo"><a href="#home" class="nav__logo-link">BM</a></div>
+    <div class="nav__links">
+      <a href="#work" class="nav__link">Work</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </div>
+    <button class="nav__menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#work" class="mobile-menu__link">Work</a>
+    <a href="#about" class="mobile-menu__link">About</a>
+    <a href="#contact" class="mobile-menu__link">Contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero__bg-text" aria-hidden="true" id="heroBgText">DEVELOPER</div>
+    <div class="hero__content">
+      <p class="hero__greeting reveal">Hello, I'm</p>
+      <h1 class="hero__name reveal">
+        <span class="hero__name-first">BASIL</span>
+        <span class="hero__name-last"><em>PETER MATHEW</em></span>
+      </h1>
+      <p class="hero__tagline reveal" id="heroTagline">
+        A Software Engineer<br />
+        Loves <span class="hero__tagline-highlight">automation</span> and <span class="hero__tagline-highlight">effient</span> workflow <br/>
+        Building <span class="hero__tagline-highlight">fast, reliable apps</span> with
+        <span class="hero__tagline-highlight">clean code</span>
+      </p>
+      <div class="hero__cta reveal">
+        <a href="#work" class="btn btn--primary">View My Work</a>
+        <a href="#about" class="btn btn--ghost">About Me</a>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator">
+      <span class="hero__scroll-line"></span>
+      <span class="hero__scroll-text">Scroll</span>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__circle"></div>
+      <div class="hero__circle hero__circle--2"></div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Android · Kotlin</span><span class="dot">·</span>
+      <span>Spring Boot</span><span class="dot">·</span>
+      <span>Python</span><span class="dot">·</span>
+      <span>REST APIs</span><span class="dot">·</span>
+      <span>MySQL</span><span class="dot">·</span>
+      <span>Firebase</span><span class="dot">·</span>
+      <span>Git &amp; GitHub</span><span class="dot">·</span>
+      <span>Android · Kotlin</span><span class="dot">·</span>
+      <span>Spring Boot</span><span class="dot">·</span>
+      <span>Python</span><span class="dot">·</span>
+      <span>REST APIs</span><span class="dot">·</span>
+      <span>MySQL</span><span class="dot">·</span>
+      <span>Firebase</span><span class="dot">·</span>
+      <span>Git &amp; GitHub</span><span class="dot">·</span>
+    </div>
+  </div>
+
+  <!-- Work Section -->
+  <section class="work" id="work">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-label" id="sectionLabel">Selected Work</span>
+        <h2 class="section-title" id="sectionTitle">Projects</h2>
+      </div>
+
+      <!-- TOP SWITCHER -->
+      <div class="mode-switcher reveal">
+        <button class="mode-btn mode-btn--main is-active" data-target="main">
+          <span class="mode-btn__icon">💼</span>
+          <div class="mode-btn__copy">
+            <span class="mode-btn__text">Main Projects</span>
+            <span class="mode-btn__sub">Real-world builds</span>
+          </div>
+        </button>
+        <div class="mode-switcher__track">
+          <div class="mode-switcher__pip"></div>
+        </div>
+        <button class="mode-btn mode-btn--fun" data-target="fun">
+          <div class="mode-btn__copy">
+            <span class="mode-btn__text">Fun Projects</span>
+            <span class="mode-btn__sub">Built for joy</span>
+          </div>
+          <span class="mode-btn__icon">🎮</span>
+        </button>
+      </div>
+
+      <!-- MAIN PANEL -->
+      <div class="projects-panel" id="mainPanel">
+        <div class="projects">
+
+          <article class="project reveal" data-index="01">
+            <a href="https://github.com/peter00123" target="_blank" rel="noopener" class="project__link">
+              <div class="project__media">
+                <div class="project__img-wrap">
+                  <img src="assets/images/project-bob.svg" alt="Bank of Baroda Demo Android UI" class="project__img" />
+                </div>
+                <div class="project__overlay"><span class="project__view">View on GitHub →</span></div>
+              </div>
+              <div class="project__info">
+                <div class="project__meta">
+                  <span class="project__num">01</span>
+                  <span class="project__tags">Android · Kotlin · Material Design</span>
+                </div>
+                <h3 class="project__title">Bank of Baroda Demo UI</h3>
+                <p class="project__desc">A polished Android UI inspired by real-world mobile banking. Built with Kotlin and Material Design components — clean layouts, intuitive navigation, and a smooth UX that mirrors production banking apps.</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="project project--reverse reveal" data-index="02">
+            <a href="https://github.com/peter00123" target="_blank" rel="noopener" class="project__link">
+              <div class="project__media">
+                <div class="project__img-wrap">
+                  <img src="assets/images/project-liveshare.svg" alt="Easy Live Share Tool" class="project__img" />
+                </div>
+                <div class="project__overlay"><span class="project__view">View on GitHub →</span></div>
+              </div>
+              <div class="project__info">
+                <div class="project__meta">
+                  <span class="project__num">02</span>
+                  <span class="project__tags">Python · Networking · QR Code</span>
+                </div>
+                <h3 class="project__title">Easy Live Share</h3>
+                <p class="project__desc">A local preview tool for designers — generates a QR code that anyone on the same network can scan to instantly view live previews of images or websites. Zero cables, zero uploads.</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="project reveal" data-index="03">
+            <a href="https://github.com/peter00123" target="_blank" rel="noopener" class="project__link">
+              <div class="project__media">
+                <div class="project__img-wrap">
+                  <img src="assets/images/project-contacts.svg" alt="Mass Contact Entry" class="project__img" />
+                </div>
+                <div class="project__overlay"><span class="project__view">View on GitHub →</span></div>
+              </div>
+              <div class="project__info">
+                <div class="project__meta">
+                  <span class="project__num">03</span>
+                  <span class="project__tags">Python · Google People API · CLI</span>
+                </div>
+                <h3 class="project__title">Mass Contact Entry</h3>
+                <p class="project__desc">A CLI tool that bulk-imports contacts from Excel/CSV into Gmail via the Google People API. Hours of manual entry compressed to seconds — designed for large institutions.</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="project project--reverse reveal" data-index="04">
+            <a href="https://github.com/peter00123" target="_blank" rel="noopener" class="project__link">
+              <div class="project__media">
+                <div class="project__img-wrap">
+                  <img src="assets/images/project-fileshare.svg" alt="File Sharing Android App" class="project__img" />
+                </div>
+                <div class="project__overlay"><span class="project__view">View on GitHub →</span></div>
+              </div>
+              <div class="project__info">
+                <div class="project__meta">
+                  <span class="project__num">04</span>
+                  <span class="project__tags">Android · Kotlin · Cloud · In Progress</span>
+                </div>
+                <h3 class="project__title">File Sharing Application <span class="wip-badge">WIP</span></h3>
+                <p class="project__desc">An Android app for transferring files over local network and the internet, with cloud integration via Firebase/Supabase. Targeting seamless cross-device transfers with minimal setup.</p>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div><!-- /mainPanel -->
+
+      <!-- FUN PANEL -->
+      <div class="projects-panel projects-panel--fun" id="funPanel" aria-hidden="true">
+        <div class="projects">
+
+          <article class="project reveal" data-index="01">
+            <a href="https://github.com/peter00123" target="_blank" rel="noopener" class="project__link">
+              <div class="project__media">
+                <div class="project__img-wrap">
+                  <img src="assets/images/project-encrypt.svg" alt="Message Encrypter" class="project__img" />
+                </div>
+                <div class="project__overlay"><span class="project__view">View on GitHub →</span></div>
+              </div>
+              <div class="project__info">
+                <div class="project__meta">
+                  <span class="project__num">01</span>
+                  <span class="project__tags">JavaScript · Python · Cipher</span>
+                </div>
+                <h3 class="project__title">Message Encrypter</h3>
+                <p class="project__desc">Encrypt and decrypt text with Caesar and custom cipher algorithms. Built in both JS (web UI) and Python (CLI) — because why send plain text when you can send secret code?</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="project project--reverse reveal" data-index="02">
+            <a href="https://github.com/peter00123" target="_blank" rel="noopener" class="project__link">
+              <div class="project__media">
+                <div class="project__img-wrap">
+                  <img src="assets/images/fun-github.svg" alt="GitHub Activity Generator" class="project__img" />
+                </div>
+                <div class="project__overlay"><span class="project__view">View on GitHub →</span></div>
+              </div>
+              <div class="project__info">
+                <div class="project__meta">
+                  <span class="project__num">02</span>
+                  <span class="project__tags">Python · Git · Automation</span>
+                </div>
+                <h3 class="project__title">GitHub Activity Generator</h3>
+                <p class="project__desc">Automatically seeds your GitHub contribution graph with commits at the click of a button. Generates backdated activity for aesthetics — because a green graph is a happy graph.</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="project reveal" data-index="03">
+            <a href="#home" class="project__link">
+              <div class="project__media">
+                <div class="project__img-wrap">
+                  <img src="assets/images/fun-portfolio.svg" alt="This Portfolio" class="project__img" />
+                </div>
+                <div class="project__overlay"><span class="project__view">You're on it →</span></div>
+              </div>
+              <div class="project__info">
+                <div class="project__meta">
+                  <span class="project__num">03</span>
+                  <span class="project__tags">HTML · CSS · JavaScript</span>
+                </div>
+                <h3 class="project__title">This Portfolio 👆</h3>
+                <p class="project__desc">The very site you're on right now. Dark-themed, animated, with a secret fun mode — built from scratch with vanilla HTML, CSS, and JS. Meta? Absolutely.</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="project project--reverse reveal" data-index="04">
+            <a href="https://github.com/peter00123" target="_blank" rel="noopener" class="project__link">
+              <div class="project__media">
+                <div class="project__img-wrap">
+                  <img src="assets/images/fun-flames.svg" alt="Custom Flames App" class="project__img" />
+                </div>
+                <div class="project__overlay"><span class="project__view">View on GitHub →</span></div>
+              </div>
+              <div class="project__info">
+                <div class="project__meta">
+                  <span class="project__num">04</span>
+                  <span class="project__tags">Python · Google Sheets API</span>
+                </div>
+                <h3 class="project__title">Custom Flames</h3>
+                <p class="project__desc">The classic FLAMES relationship game, turbocharged with Google Sheets integration. Enter names, run the algorithm, log results — complete with custom rules and shareable output.</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="project reveal" data-index="05">
+            <a href="https://github.com/peter00123" target="_blank" rel="noopener" class="project__link">
+              <div class="project__media">
+                <div class="project__img-wrap">
+                  <img src="assets/images/fun-date.svg" alt="Date Invitation Webpage" class="project__img" />
+                </div>
+                <div class="project__overlay"><span class="project__view">View on GitHub →</span></div>
+              </div>
+              <div class="project__info">
+                <div class="project__meta">
+                  <span class="project__num">05</span>
+                  <span class="project__tags">HTML · CSS · JS · Animations</span>
+                </div>
+                <h3 class="project__title">Date Invitation Webpage</h3>
+                <p class="project__desc">An interactive invite page for asking someone out — the "No" button runs away from the cursor, confetti explodes on "Yes", and a custom love message appears. Wholesome chaos.</p>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div><!-- /funPanel -->
+
+      <!-- BOTTOM SWITCHER -->
+      <div class="mode-switcher mode-switcher--bottom reveal">
+        <button class="mode-btn mode-btn--main is-active" data-target="main">
+          <span class="mode-btn__icon">💼</span>
+          <div class="mode-btn__copy">
+            <span class="mode-btn__text">Main Projects</span>
+            <span class="mode-btn__sub">Real-world builds</span>
+          </div>
+        </button>
+        <div class="mode-switcher__track">
+          <div class="mode-switcher__pip"></div>
+        </div>
+        <button class="mode-btn mode-btn--fun" data-target="fun">
+          <div class="mode-btn__copy">
+            <span class="mode-btn__text">Fun Projects</span>
+            <span class="mode-btn__sub">Built for joy</span>
+          </div>
+          <span class="mode-btn__icon">🎮</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__visual reveal">
+          <div class="about__img-frame">
+            <img src="assets/images/portrait.svg" alt="Basil V Mathew" class="about__img" />
+          </div>
+          <div class="about__stats">
+            <div class="stat"><span class="stat__num">2+</span><span class="stat__label">Years Coding</span></div>
+            <div class="stat"><span class="stat__num">9+</span><span class="stat__label">Projects Built</span></div>
+            <div class="stat"><span class="stat__num">2×</span><span class="stat__label">Symposium Winner</span></div>
+            <div class="stat"><span class="stat__num">2026</span><span class="stat__label">Graduating</span></div>
+          </div>
+        </div>
+        <div class="about__content">
+          <div class="section-header reveal">
+            <span class="section-label">About Me</span>
+            <h2 class="section-title">Clean code, smooth experiences</h2>
+          </div>
+          <p class="about__text reveal">I'm Basil, an Android developer and software engineering student at Tamilnadu College of Engineering, Coimbatore (graduating 2026). I turn ideas into fast, reliable mobile apps — and I care deeply about clean architecture and smooth user experiences.</p>
+          <p class="about__text reveal">I work primarily with Kotlin and Android Jetpack on the front, Spring Boot with REST APIs on the back. I've also built Python CLI tools, web scrapers, and fun side projects. Currently interning at Bornfire Innovations.</p>
+          <div class="skills reveal">
+            <div class="skill-group">
+              <h4 class="skill-group__title">Mobile &amp; Backend</h4>
+              <ul class="skill-list">
+                <li>Kotlin / Android Jetpack</li>
+                <li>Spring Boot · REST APIs</li>
+                <li>Firebase · Supabase</li>
+                <li>MySQL · PostgreSQL</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4 class="skill-group__title">Languages &amp; Tools</h4>
+              <ul class="skill-list">
+                <li>Python · Java · PHP</li>
+                <li>HTML · CSS · JavaScript</li>
+                <li>Git &amp; GitHub · Maven</li>
+                <li>Android Studio · VS Code</li>
+              </ul>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn--primary reveal">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__inner">
+        <div class="section-header reveal">
+          <span class="section-label">Contact</span>
+          <h2 class="section-title contact__title">Let's build something <em>great</em></h2>
+        </div>
+        <p class="contact__sub reveal">Open to internships, collaborations, and interesting problems.</p>
+        <div class="contact__actions reveal">
+          <a href="mailto:basilpetermathew@gmail.com" class="contact__email">basilpetermathew@gmail.com</a>
+        </div>
+        <div class="contact__socials reveal">
+          <a href="https://github.com/peter00123" target="_blank" rel="noopener" class="social-link">GitHub</a>
+          <a href="https://linkedin.com/in/basil-peter-mathew-042f56" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
+          <a href="tel:+919188356308" class="social-link">+91 91883 56308</a>
+        </div>
+      </div>
+    </div>
+    <div class="contact__big-text" aria-hidden="true">HELLO</div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__copy">© 2024 Basil V Mathew. All rights reserved.</span>
+        <a href="#home" class="footer__top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

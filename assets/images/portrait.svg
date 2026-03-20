@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 530" width="400" height="530">
+  <defs>
+    <linearGradient id="pBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e1a14"/>
+      <stop offset="100%" style="stop-color:#08100c"/>
+    </linearGradient>
+    <radialGradient id="skinB" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#c88a5c;stop-opacity:0.85"/>
+      <stop offset="100%" style="stop-color:#9a6030;stop-opacity:0.65"/>
+    </radialGradient>
+    <linearGradient id="shirtB" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2a20"/>
+      <stop offset="100%" style="stop-color:#101a14"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="530" fill="url(#pBg)"/>
+
+  <!-- BG circles -->
+  <circle cx="200" cy="210" r="175" fill="none" stroke="#c8b89a" stroke-width="0.5" stroke-opacity="0.06"/>
+  <circle cx="200" cy="210" r="130" fill="none" stroke="#c8b89a" stroke-width="0.5" stroke-opacity="0.04"/>
+
+  <!-- Shirt / body -->
+  <path d="M60,400 Q80,330 128,315 L200,308 L272,315 Q320,330 340,400 L360,530 L40,530 Z"
+        fill="url(#shirtB)" stroke="#c8b89a" stroke-width="0.5" stroke-opacity="0.15"/>
+  <!-- Collar -->
+  <path d="M175,308 L200,330 L225,308" fill="none" stroke="#c8b89a" stroke-width="1" stroke-opacity="0.2"/>
+
+  <!-- Neck -->
+  <rect x="178" y="280" width="44" height="36" rx="8" fill="url(#skinB)"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="225" rx="80" ry="88" fill="url(#skinB)"/>
+
+  <!-- Hair — short, neat -->
+  <ellipse cx="200" cy="150" rx="82" ry="38" fill="#18100a"/>
+  <path d="M120,185 Q116,215 122,244 Q124,195 130,180 Z" fill="#18100a"/>
+  <path d="M280,185 Q284,215 278,244 Q276,195 270,180 Z" fill="#18100a"/>
+  <!-- Hair top detail -->
+  <ellipse cx="200" cy="148" rx="62" ry="28" fill="#201408"/>
+
+  <!-- Ears -->
+  <ellipse cx="120" cy="234" rx="7" ry="13" fill="url(#skinB)" opacity="0.9"/>
+  <ellipse cx="280" cy="234" rx="7" ry="13" fill="url(#skinB)" opacity="0.9"/>
+
+  <!-- Eyes -->
+  <ellipse cx="170" cy="222" rx="13" ry="9" fill="#f0e8d8" opacity="0.95"/>
+  <circle cx="170" cy="222" r="6" fill="#2a1a08"/>
+  <circle cx="170" cy="222" r="3.5" fill="#100800"/>
+  <circle cx="172" cy="219" r="2" fill="#fff" opacity="0.8"/>
+
+  <ellipse cx="230" cy="222" rx="13" ry="9" fill="#f0e8d8" opacity="0.95"/>
+  <circle cx="230" cy="222" r="6" fill="#2a1a08"/>
+  <circle cx="230" cy="222" r="3.5" fill="#100800"/>
+  <circle cx="232" cy="219" r="2" fill="#fff" opacity="0.8"/>
+
+  <!-- Eyebrows -->
+  <path d="M155,208 Q170,203 185,206" fill="none" stroke="#1e1008" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M215,206 Q230,203 245,208" fill="none" stroke="#1e1008" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <path d="M195,230 Q192,248 188,256 Q200,263 212,256 Q208,248 205,230"
+        fill="none" stroke="#9a6030" stroke-width="1.2" stroke-opacity="0.5"/>
+
+  <!-- Smile -->
+  <path d="M182,274 Q200,288 218,274" fill="none" stroke="#7a4020" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Glasses -->
+  <rect x="154" y="213" width="38" height="20" rx="7" fill="none" stroke="#c8b89a" stroke-width="1.2" stroke-opacity="0.55"/>
+  <rect x="208" y="213" width="38" height="20" rx="7" fill="none" stroke="#c8b89a" stroke-width="1.2" stroke-opacity="0.55"/>
+  <line x1="192" y1="223" x2="208" y2="223" stroke="#c8b89a" stroke-width="1" stroke-opacity="0.45"/>
+  <line x1="150" y1="223" x2="154" y2="223" stroke="#c8b89a" stroke-width="1" stroke-opacity="0.4"/>
+  <line x1="246" y1="223" x2="250" y2="223" stroke="#c8b89a" stroke-width="1" stroke-opacity="0.4"/>
+
+  <!-- Code on shirt (subtle) -->
+  <text x="200" y="390" fill="#c8b89a" font-size="9" font-family="monospace" text-anchor="middle" opacity="0.12">{ code : clean }</text>
+
+  <!-- Name -->
+  <text x="200" y="478" fill="#e8d5b7" font-size="20" font-family="Georgia, serif" text-anchor="middle" opacity="0.88">Basil V Mathew</text>
+  <text x="200" y="500" fill="#c8b89a" font-size="9" font-family="sans-serif" text-anchor="middle" opacity="0.4" letter-spacing="3">ANDROID DEV · ENGINEER</text>
+  <line x1="120" y1="513" x2="280" y2="513" stroke="#c8b89a" stroke-width="0.5" opacity="0.25"/>
+  <text x="200" y="527" fill="#c8b89a" font-size="8" font-family="sans-serif" text-anchor="middle" opacity="0.3" letter-spacing="1">Coimbatore · Kerala</text>
+</svg>

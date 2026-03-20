@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bgEnc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1218"/>
+      <stop offset="100%" style="stop-color:#060c10"/>
+    </linearGradient>
+    <linearGradient id="encPanel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#101c22"/>
+      <stop offset="100%" style="stop-color:#0c1418"/>
+    </linearGradient>
+    <linearGradient id="lockGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#c8b89a;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#c8b89a;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgEnc)"/>
+
+  <!-- Background binary stream -->
+  <g font-size="9" font-family="monospace" fill="#c8b89a" opacity="0.04">
+    <text x="20" y="40">01001000 01100101 01101100 01101100 01101111</text>
+    <text x="20" y="80">01010111 01101111 01110010 01101100 01100100</text>
+    <text x="20" y="520">01000010 01000001 01010011 01001001 01001100</text>
+    <text x="20" y="560">01000101 01001110 01000011 01010010 01011001</text>
+    <text x="500" y="40">01010000 01010100</text>
+    <text x="500" y="560">01000101 01000100</text>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="65" fill="#e8d5b7" font-size="18" font-family="Georgia, serif" text-anchor="middle" opacity="0.85">Message Encrypter</text>
+  <text x="400" y="86" fill="#c8b89a" font-size="9" font-family="sans-serif" text-anchor="middle" opacity="0.4" letter-spacing="3">JS + PYTHON · CAESAR CIPHER</text>
+
+  <!-- Left Panel: Input -->
+  <rect x="50" y="110" width="280" height="380" rx="10" fill="url(#encPanel)" stroke="#c8b89a" stroke-width="0.5" stroke-opacity="0.2"/>
+  <text x="190" y="140" fill="#c8b89a" font-size="9" font-family="sans-serif" text-anchor="middle" opacity="0.5" letter-spacing="2">PLAINTEXT</text>
+  <rect x="66" y="150" width="248" height="100" rx="6" fill="#081216" stroke="#c8b89a" stroke-width="0.4" stroke-opacity="0.2"/>
+  <text x="80" y="172" fill="#e8d5b7" font-size="11" font-family="monospace" opacity="0.85">Hello, Basil!</text>
+  <text x="80" y="192" fill="#e8d5b7" font-size="11" font-family="monospace" opacity="0.85">This is a secret</text>
+  <text x="80" y="212" fill="#e8d5b7" font-size="11" font-family="monospace" opacity="0.85">message 🔐</text>
+  <!-- Cursor -->
+  <rect x="80" y="220" width="7" height="12" fill="#c8b89a" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0;0.6" dur="1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Shift key selector -->
+  <text x="80" y="280" fill="#c8b89a" font-size="9" font-family="sans-serif" opacity="0.5" letter-spacing="1">SHIFT KEY</text>
+  <rect x="80" y="290" width="248" height="36" rx="6" fill="#081216" stroke="#c8b89a" stroke-width="0.4" stroke-opacity="0.2"/>
+  <!-- Slider track -->
+  <rect x="92" y="306" width="224" height="3" rx="1.5" fill="#c8b89a" fill-opacity="0.1"/>
+  <rect x="92" y="306" width="80" height="3" rx="1.5" fill="#c8b89a" fill-opacity="0.5"/>
+  <circle cx="172" cy="307.5" r="7" fill="#c8b89a" opacity="0.8"/>
+  <text x="300" y="310" fill="#c8b89a" font-size="10" font-family="monospace" opacity="0.7">13</text>
+
+  <!-- Algorithm tabs -->
+  <text x="80" y="358" fill="#c8b89a" font-size="9" font-family="sans-serif" opacity="0.5" letter-spacing="1">ALGORITHM</text>
+  <rect x="80" y="366" width="78" height="28" rx="4" fill="#c8b89a" fill-opacity="0.85"/>
+  <text x="119" y="384" fill="#081216" font-size="9" font-family="sans-serif" text-anchor="middle" font-weight="600">Caesar</text>
+  <rect x="164" y="366" width="78" height="28" rx="4" fill="none" stroke="#c8b89a" stroke-width="0.6" stroke-opacity="0.3"/>
+  <text x="203" y="384" fill="#c8b89a" font-size="9" font-family="sans-serif" text-anchor="middle" opacity="0.5">ROT13</text>
+  <rect x="248" y="366" width="66" height="28" rx="4" fill="none" stroke="#c8b89a" stroke-width="0.6" stroke-opacity="0.3"/>
+  <text x="281" y="384" fill="#c8b89a" font-size="9" font-family="sans-serif" text-anchor="middle" opacity="0.5">Custom</text>
+
+  <!-- Encrypt button -->
+  <rect x="80" y="416" width="248" height="44" rx="6" fill="#c8b89a"/>
+  <text x="204" y="443" fill="#081216" font-size="12" font-family="sans-serif" text-anchor="middle" font-weight="600" letter-spacing="1">ENCRYPT →</text>
+
+  <!-- Center: lock icon -->
+  <ellipse cx="400" cy="300" rx="60" ry="60" fill="url(#lockGlow)"/>
+  <!-- Lock body -->
+  <rect x="374" y="295" width="52" height="40" rx="6" fill="#c8b89a" opacity="0.15" stroke="#c8b89a" stroke-width="1.5" stroke-opacity="0.6"/>
+  <!-- Lock shackle -->
+  <path d="M386,295 L386,278 Q400,264 414,278 L414,295" fill="none" stroke="#c8b89a" stroke-width="2" stroke-opacity="0.6"/>
+  <!-- Keyhole -->
+  <circle cx="400" cy="311" r="5" fill="#c8b89a" opacity="0.4"/>
+  <rect x="397" y="313" width="6" height="10" rx="1" fill="#c8b89a" opacity="0.4"/>
+  <!-- Cipher arrow -->
+  <line x1="330" y1="300" x2="370" y2="300" stroke="#c8b89a" stroke-width="1.5" stroke-opacity="0.5" stroke-dasharray="4 2"/>
+  <line x1="430" y1="300" x2="470" y2="300" stroke="#c8b89a" stroke-width="1.5" stroke-opacity="0.5" stroke-dasharray="4 2"/>
+
+  <!-- Right panel: Output (encrypted) -->
+  <rect x="470" y="110" width="280" height="380" rx="10" fill="url(#encPanel)" stroke="#c8b89a" stroke-width="0.5" stroke-opacity="0.2"/>
+  <text x="610" y="140" fill="#c8b89a" font-size="9" font-family="sans-serif" text-anchor="middle" opacity="0.5" letter-spacing="2">CIPHERTEXT</text>
+  <rect x="486" y="150" width="248" height="100" rx="6" fill="#081216" stroke="#c8b89a" stroke-width="0.4" stroke-opacity="0.2"/>
+  <text x="500" y="172" fill="#6fcf97" font-size="11" font-family="monospace" opacity="0.9">Uryyb, Onfvy!</text>
+  <text x="500" y="192" fill="#6fcf97" font-size="11" font-family="monospace" opacity="0.9">Guvf vf n frperg</text>
+  <text x="500" y="212" fill="#6fcf97" font-size="11" font-family="monospace" opacity="0.9">zrffntr 🔐</text>
+
+  <!-- Caesar wheel visualization -->
+  <text x="610" y="290" fill="#c8b89a" font-size="9" font-family="sans-serif" text-anchor="middle" opacity="0.4" letter-spacing="1">CAESAR MAPPING</text>
+  <!-- Outer ring letters -->
+  <g font-size="8" font-family="monospace" text-anchor="middle">
+    <text x="610" y="318" fill="#c8b89a" opacity="0.5" transform="rotate(0,610,350)">A→N</text>
+    <text x="610" y="318" fill="#c8b89a" opacity="0.5" transform="rotate(30,610,350)">B→O</text>
+    <text x="610" y="318" fill="#c8b89a" opacity="0.5" transform="rotate(60,610,350)">C→P</text>
+    <text x="610" y="318" fill="#c8b89a" opacity="0.5" transform="rotate(90,610,350)">D→Q</text>
+    <text x="610" y="318" fill="#c8b89a" opacity="0.5" transform="rotate(120,610,350)">E→R</text>
+    <text x="610" y="318" fill="#c8b89a" opacity="0.5" transform="rotate(150,610,350)">F→S</text>
+    <text x="610" y="318" fill="#c8b89a" opacity="0.5" transform="rotate(180,610,350)">G→T</text>
+    <text x="610" y="318" fill="#c8b89a" opacity="0.5" transform="rotate(210,610,350)">H→U</text>
+    <text x="610" y="318" fill="#c8b89a" opacity="0.5" transform="rotate(240,610,350)">I→V</text>
+    <text x="610" y="318" fill="#c8b89a" opacity="0.5" transform="rotate(270,610,350)">J→W</text>
+    <text x="610" y="318" fill="#c8b89a" opacity="0.5" transform="rotate(300,610,350)">K→X</text>
+    <text x="610" y="318" fill="#c8b89a" opacity="0.5" transform="rotate(330,610,350)">L→Y</text>
+  </g>
+  <circle cx="610" cy="350" r="34" fill="none" stroke="#c8b89a" stroke-width="0.6" stroke-opacity="0.25"/>
+  <circle cx="610" cy="350" r="18" fill="none" stroke="#c8b89a" stroke-width="0.6" stroke-opacity="0.15"/>
+  <text x="610" y="355" fill="#c8b89a" font-size="10" font-family="monospace" text-anchor="middle" opacity="0.5">+13</text>
+
+  <!-- Copy button -->
+  <rect x="486" y="416" width="120" height="44" rx="6" fill="none" stroke="#c8b89a" stroke-width="0.8" stroke-opacity="0.4"/>
+  <text x="546" y="443" fill="#c8b89a" font-size="11" font-family="sans-serif" text-anchor="middle" opacity="0.6">Copy 📋</text>
+  <!-- Decrypt button -->
+  <rect x="614" y="416" width="120" height="44" rx="6" fill="#c8b89a" fill-opacity="0.1" stroke="#c8b89a" stroke-width="0.6" stroke-opacity="0.4"/>
+  <text x="674" y="443" fill="#c8b89a" font-size="11" font-family="sans-serif" text-anchor="middle" opacity="0.7">← Decrypt</text>
+
+  <!-- Bottom tags -->
+  <text x="400" y="555" fill="#c8b89a" font-size="9" font-family="sans-serif" text-anchor="middle" opacity="0.3" letter-spacing="3">JAVASCRIPT UI · PYTHON CLI · CIPHER ALGORITHMS</text>
+</svg>

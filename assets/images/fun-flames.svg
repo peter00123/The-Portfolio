@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bgFL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a080a"/>
+      <stop offset="100%" style="stop-color:#100408"/>
+    </linearGradient>
+    <linearGradient id="flameGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#f5a623"/>
+      <stop offset="40%" style="stop-color:#e8453c"/>
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:0"/>
+    </linearGradient>
+    <radialGradient id="flameGlow" cx="50%" cy="80%" r="50%">
+      <stop offset="0%" style="stop-color:#e8453c;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#e8453c;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgFL)"/>
+
+  <!-- Background glow -->
+  <ellipse cx="400" cy="400" rx="250" ry="200" fill="url(#flameGlow)"/>
+
+  <!-- Title -->
+  <text x="400" y="60" fill="#f0eeff" font-size="18" font-family="Georgia, serif" text-anchor="middle" opacity="0.9">Custom Flames</text>
+  <text x="400" y="80" fill="#e8453c" font-size="9" font-family="sans-serif" text-anchor="middle" opacity="0.6" letter-spacing="3">PYTHON · GOOGLE SHEETS API</text>
+
+  <!-- Left: Input form -->
+  <rect x="60" y="100" width="280" height="340" rx="10" fill="#1a0812" stroke="#e8453c" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="200" y="130" fill="#f5a623" font-size="10" font-family="sans-serif" text-anchor="middle" opacity="0.8" letter-spacing="1">ENTER NAMES</text>
+  <rect x="80" y="144" width="240" height="36" rx="6" fill="#0e0408" stroke="#e8453c" stroke-width="0.6" stroke-opacity="0.4"/>
+  <text x="96" y="167" fill="#f0eeff" font-size="11" font-family="sans-serif" opacity="0.9">Basil</text>
+  <rect x="80" y="192" width="240" height="36" rx="6" fill="#0e0408" stroke="#a855f7" stroke-width="0.6" stroke-opacity="0.4"/>
+  <text x="96" y="215" fill="#f0eeff" font-size="11" font-family="sans-serif" opacity="0.9">Ananya</text>
+  <text x="200" y="254" fill="#c8b89a" font-size="9" font-family="sans-serif" text-anchor="middle" opacity="0.5" letter-spacing="1">CUSTOM RULES</text>
+  <rect x="80" y="262" width="112" height="28" rx="6" fill="#1a0812" stroke="#e8453c" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="136" y="280" fill="#e8453c" font-size="9" font-family="sans-serif" text-anchor="middle" opacity="0.7">F - Friends</text>
+  <rect x="200" y="262" width="120" height="28" rx="6" fill="#1a0812" stroke="#a855f7" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="260" y="280" fill="#a855f7" font-size="9" font-family="sans-serif" text-anchor="middle" opacity="0.7">L - Love</text>
+  <rect x="80" y="298" width="112" height="28" rx="6" fill="#1a0812" stroke="#f5a623" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="136" y="316" fill="#f5a623" font-size="9" font-family="sans-serif" text-anchor="middle" opacity="0.7">A - Affection</text>
+  <rect x="200" y="298" width="120" height="28" rx="6" fill="#1a0812" stroke="#6fcf97" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="260" y="316" fill="#6fcf97" font-size="9" font-family="sans-serif" text-anchor="middle" opacity="0.7">M - Marriage</text>
+  <rect x="80" y="334" width="112" height="28" rx="6" fill="#1a0812" stroke="#8be9fd" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="136" y="352" fill="#8be9fd" font-size="9" font-family="sans-serif" text-anchor="middle" opacity="0.7">E - Enemy</text>
+  <rect x="200" y="334" width="120" height="28" rx="6" fill="#1a0812" stroke="#f0e68c" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="260" y="352" fill="#f0e68c" font-size="9" font-family="sans-serif" text-anchor="middle" opacity="0.7">S - Soulmate</text>
+  <!-- Run button -->
+  <rect x="80" y="376" width="240" height="44" rx="8" fill="#e8453c" fill-opacity="0.85"/>
+  <text x="200" y="403" fill="#fff" font-size="12" font-family="sans-serif" text-anchor="middle" font-weight="600">🔥 Calculate FLAMES</text>
+
+  <!-- Center: Flame animation -->
+  <!-- Flame shape -->
+  <g transform="translate(400, 240)">
+    <path d="M0,120 Q-40,80 -20,40 Q0,10 0,-20 Q20,20 30,50 Q50,20 40,-10 Q60,30 50,70 Q70,50 60,100 Q40,130 0,120 Z"
+          fill="url(#flameGrad)" opacity="0.85"/>
+    <path d="M0,120 Q-25,90 -10,60 Q0,35 0,10 Q15,35 20,55 Q35,30 28,5 Q45,40 38,75 Q55,55 45,100 Q28,120 0,120 Z"
+          fill="#f5a623" opacity="0.6"/>
+    <!-- Inner bright core -->
+    <ellipse cx="5" cy="85" rx="12" ry="18" fill="#fff" opacity="0.15"/>
+  </g>
+
+  <!-- FLAMES letters spinning around flame -->
+  <g font-size="22" font-family="Georgia, serif" font-weight="600" text-anchor="middle">
+    <text x="400" y="145" fill="#e8453c" opacity="0.9" transform="rotate(-15,400,290)">F</text>
+    <text x="470" y="200" fill="#f5a623" opacity="0.9" transform="rotate(20,400,290)">L</text>
+    <text x="480" y="310" fill="#ec4899" opacity="0.9" transform="rotate(60,400,290)">A</text>
+    <text x="400" y="420" fill="#6fcf97" opacity="0.9">M</text>
+    <text x="320" y="370" fill="#8be9fd" opacity="0.9" transform="rotate(-60,400,290)">E</text>
+    <text x="305" y="230" fill="#d8b4fe" opacity="0.9" transform="rotate(-30,400,290)">S</text>
+  </g>
+
+  <!-- Right: Result + Google Sheets -->
+  <rect x="460" y="100" width="280" height="340" rx="10" fill="#1a0812" stroke="#a855f7" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="600" y="130" fill="#d8b4fe" font-size="10" font-family="sans-serif" text-anchor="middle" opacity="0.8" letter-spacing="1">RESULT</text>
+  <!-- Big result -->
+  <text x="600" y="190" fill="#f5a623" font-size="48" font-family="Georgia, serif" text-anchor="middle" opacity="0.9">💕</text>
+  <text x="600" y="230" fill="#f0eeff" font-size="16" font-family="Georgia, serif" text-anchor="middle" opacity="0.9">Love</text>
+  <text x="600" y="252" fill="#c8b89a" font-size="10" font-family="sans-serif" text-anchor="middle" opacity="0.5">Basil &amp; Ananya = Love</text>
+  <!-- Share output -->
+  <rect x="476" y="272" width="248" height="28" rx="6" fill="#0e0408" stroke="#6fcf97" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="600" y="290" fill="#6fcf97" font-size="9" font-family="sans-serif" text-anchor="middle" opacity="0.7">Logged to Google Sheets ✓</text>
+
+  <!-- Google Sheets mini preview -->
+  <rect x="476" y="312" width="248" height="118" rx="6" fill="#0a1a0a" stroke="#1d6f42" stroke-width="0.6" stroke-opacity="0.5"/>
+  <rect x="476" y="312" width="248" height="18" rx="6" fill="#1d6f42" fill-opacity="0.4"/>
+  <rect x="476" y="322" width="248" height="8" fill="#1d6f42" fill-opacity="0.4"/>
+  <text x="600" y="325" fill="#fff" font-size="8" font-family="sans-serif" text-anchor="middle" opacity="0.7">FLAMES Results.gsheet</text>
+  <g font-size="8" font-family="monospace">
+    <text x="486" y="344" fill="#c8b89a" opacity="0.4">Name 1</text>
+    <text x="548" y="344" fill="#c8b89a" opacity="0.4">Name 2</text>
+    <text x="620" y="344" fill="#c8b89a" opacity="0.4">Result</text>
+    <line x1="476" y1="348" x2="724" y2="348" stroke="#1d6f42" stroke-width="0.5" stroke-opacity="0.4"/>
+    <text x="486" y="362" fill="#f0eeff" opacity="0.7">Basil</text>
+    <text x="548" y="362" fill="#f0eeff" opacity="0.7">Ananya</text>
+    <text x="620" y="362" fill="#ec4899" opacity="0.8">Love 💕</text>
+    <text x="486" y="378" fill="#f0eeff" opacity="0.5">Rohit</text>
+    <text x="548" y="378" fill="#f0eeff" opacity="0.5">Priya</text>
+    <text x="620" y="378" fill="#6fcf97" opacity="0.7">Soulmate ✨</text>
+    <text x="486" y="394" fill="#f0eeff" opacity="0.4">Arjun</text>
+    <text x="548" y="394" fill="#f0eeff" opacity="0.4">Kavya</text>
+    <text x="620" y="394" fill="#f5a623" opacity="0.6">Friends 🤝</text>
+    <text x="486" y="410" fill="#c8b89a" opacity="0.2">...</text>
+    <text x="548" y="410" fill="#c8b89a" opacity="0.2">...</text>
+    <text x="620" y="410" fill="#c8b89a" opacity="0.2">...</text>
+  </g>
+
+  <text x="400" y="555" fill="#f5a623" font-size="13" font-family="Georgia, serif" text-anchor="middle" opacity="0.75">Because who needs a reason to build this?</text>
+  <text x="400" y="574" fill="#e8453c" font-size="9" font-family="sans-serif" text-anchor="middle" opacity="0.35" letter-spacing="2">PYTHON · GOOGLE SHEETS · PURE FUN</text>
+</svg>
