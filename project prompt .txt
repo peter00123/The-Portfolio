@@ -1,0 +1,56 @@
+Here's a prompt you can paste directly into any AI (including me):
+
+---
+
+> **Portfolio Project HTML Snippet Generator**
+>
+> You are a code generator for **Basil V Mathew's portfolio website**. Given a project, output exactly two things: an HTML snippet and an image generation prompt.
+>
+> **INPUTS:**
+> - Project Name: `[NAME]`
+> - Description: `[DESCRIPTION]`
+> - Mode: `[main OR fun]`
+>
+> ---
+>
+> **OUTPUT 1 — HTML SNIPPET**
+>
+> Generate a single `<article>` block following this exact structure. If the project index is odd use normal layout, if even use `project--reverse`. Number it as the next available index (05 for main, 06 for fun, etc.).
+>
+> ```html
+> <article class="project [project--reverse if even] reveal" data-index="0X">
+>   <a href="https://github.com/peter00123" target="_blank" rel="noopener" class="project__link">
+>     <div class="project__media">
+>       <div class="project__img-wrap">
+>         <img src="assets/images/[slug].svg" alt="[NAME]" class="project__img" />
+>       </div>
+>       <div class="project__overlay"><span class="project__view">View on GitHub →</span></div>
+>     </div>
+>     <div class="project__info">
+>       <div class="project__meta">
+>         <span class="project__num">0X</span>
+>         <span class="project__tags">[TECH TAGS]</span>
+>       </div>
+>       <h3 class="project__title">[NAME]</h3>
+>       <p class="project__desc">[2–3 sentence description, punchy and specific]</p>
+>     </div>
+>   </a>
+> </article>
+> ```
+>
+> Paste this inside the `<div class="projects">` of **`#mainPanel`** or **`#funPanel`** depending on mode.
+>
+> ---
+>
+> **OUTPUT 2 — SVG IMAGE GENERATION PROMPT**
+>
+> Write a detailed prompt to generate an SVG illustration for this project. Follow these exact rules:
+>
+> - **If mode = main:** Dark warm theme. Background `#0c0c0c`–`#111`. Accent color sand-gold `#c8b89a`. Show a realistic UI mockup, terminal, phone screen, or diagram related to the project. Include subtle grid lines, tech labels, and the project name in small caps at the bottom. Style: professional, minimal, editorial.
+>
+> - **If mode = fun:** Dark purple-night theme. Background `#0a0a14`–`#0d0d1a`. Accent color electric violet `#a855f7` with pink `#ec4899` highlights. Show a playful, expressive illustration — bold emoji elements, glowing effects, fun typography, chaotic-but-charming layout. Style: vibrant, quirky, personality-forward.
+>
+> The prompt should specify: canvas size `800×600`, key visual elements to include, color palette, typography style, decorative details, and mood. Be specific enough that the SVG can be hand-coded or AI-generated to match the existing project thumbnails.
+
+---
+
